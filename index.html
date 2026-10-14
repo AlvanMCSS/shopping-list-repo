@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashon Revolution</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="shop-card">
+        <div class="header-row">
+          <div>
+            <p class="eyebrow">Style & essentials</p>
+            <h1>Welcome to Fashion Revolution</h1>
+          </div>
+          <div class="badge">New arrivals</div>
+        </div>
+
+        <div class="input-row">
+          <input type="text" id="itemInput" placeholder="Enter an Item">
+          <button id="addButton" class="primary">Add</button>
+        </div>
+
+        <div class="actions">
+          <button id="purchaseButton">Mark Purchased</button>
+          <button id="clearButton">Clear list</button>
+          <button id="editButton">Edit item</button>
+        </div>
+
+        <div class="summary-box">
+          <p>Total cost</p>
+          <strong>Ksh <span id="totalCost">0</span></strong>
+        </div>
+
+        <ul id="shoppingList" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
